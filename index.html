@@ -43,47 +43,10 @@
             </form>
         </div>
     </section>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/jquery.validate.min.js"></script>
-    <script>
-        $(document).ready(function() {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-$('#cpf').mask('000.000.000-00')
-$('#cep').mask('(00000-000')
-
-$('form').validate({
-    rules: {
-        nome: {
-            required: true
-        },
-        email: {
-            required: true,
-            email: true
-        },
-        cpf: {
-            required:true
-        },
-        cep: {
-            required:true
-        },
-        enderecoCompleto: {
-            required: true,
-        }
-    },
-    messages: {
-        nome: 'Por favor, escreva seu nome'
-    },
-    submitHandler: function(form) {
-        console.log(form)
-    },
-    invalidHandler: function(evento, validador) {
-        let camposIncorretos = validador.numberOfInvalids();
-        if (camposIncorretos) {
-            alert(`Existem ${camposIncorretos} campos incorretos`)
-        }
-    }
-})
-})
-    </script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./js/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.validate.min.js"></script>
 </body>
 </html>
